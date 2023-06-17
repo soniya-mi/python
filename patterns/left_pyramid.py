@@ -7,7 +7,12 @@ for r_index in range(0,n): #0,1
 	    print ("*" , end="")
 	print ("")
 
-  
+#with single looop
+for index in range(0,n):
+	string = string + "*"
+	print (string)
+#print (string)
+print ()
 '''
 *
 **
