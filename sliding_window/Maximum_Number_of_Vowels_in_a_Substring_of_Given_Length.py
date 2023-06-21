@@ -1,17 +1,19 @@
 s = "leetcode"
 k = 3
 max = 0
-for char_index in range(0,len(s)-k):
+for char_index in range(0,(len(s)-k)+1):
     count = 0 
     for index in range(char_index , char_index+k):
         if s[index] in ["a","e","i","o","u"]:
             count = count + 1
+        #print (f"{char_index} {index} {count} {s[index]}")
     if count == k:
-        print ("k found")
+        max = count
         break
     elif count > max:
         max = count
 print (max)
+    
 
 '''
 https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/?envType=study-plan-v2&envId=leetcode-75
